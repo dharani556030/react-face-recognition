@@ -80,7 +80,7 @@ top_row:Height*boundaries.top_row
           })
        .then(response => response.json())
       .then((response) => {
-         if (response) {
+         if (response!=null) {
           fetch('https://obscure-hamlet-68007.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
