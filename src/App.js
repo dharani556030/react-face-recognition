@@ -92,15 +92,12 @@ top_row:Height*boundaries.top_row
             .then(count => {
               this.setState(Object.assign(this.state.user, { entries: count}))
             })
-
-        }
-        
-        this.setState({ box:
+          this.setState({ box:
           this.calculateBoundaries(
             response.outputs[0].data.regions[0].region_info.bounding_box
           )
-        });
-        console.log(this.state.box);
+        });console.log(this.state.box);
+        }
       })
       .catch((err) => {
         console.log(err);
