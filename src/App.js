@@ -81,7 +81,7 @@ top_row:Height*boundaries.top_row
        .then(response => response.json())
       .then((response) => {
          if (response) {
-          fetch('https://obscure-hamlet-68007.herokuapp.com/image', {
+          fetch('https://obscure-hamlet-68007.herokuapp.com:3001/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
