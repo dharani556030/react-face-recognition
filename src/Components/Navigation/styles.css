@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    justify-content:flex-end;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-right: 35px;
+   align-items: center;
+  
+}
+
+ a{font-size: 4vh;}
+
+.navbar a.hover {
+  
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.navbar a.active {
+ 
+  color: white;
+}

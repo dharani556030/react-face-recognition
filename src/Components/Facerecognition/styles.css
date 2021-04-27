@@ -1,0 +1,19 @@
+.face{
+    position:absolute;
+    justify-content: center;
+    top:60%;
+    left:50%;
+    width:40%;
+    transform: translate(-50%,0%);
+    -webkit-transform: translate(-50%,0%);
+    -moz-transform: translate(-50%,0%);
+    -ms-transform: translate(-50%,0%);
+    -o-transform: translate(-50%,0%);
+}
+
+.bounding-box{
+    position: absolute;
+    box-shadow: 0 0 0 3px rgb(29, 14, 122) inset;
+   
+    cursor: pointer;
+}

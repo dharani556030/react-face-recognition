@@ -1,0 +1,52 @@
+.inputbar{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width:50%;
+    padding: 2%;
+    border-radius: 2vh;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 9px 3px black;
+    -webkit-border-radius: 2vh;
+    -moz-border-radius: 2vh;
+    -ms-border-radius: 2vh;
+    -o-border-radius: 2vh;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    background:radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,radial-gradient(circle farthest-side at 0% 50%,#B71 24%,rgba(240,166,17,0) 0)19px 30px,linear-gradient(#fb1 14%,rgba(240,166,17,0) 0, rgba(240,166,17,0) 85%,#fb1 0)0 0,linear-gradient(150deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,linear-gradient(30deg,#fb1 24%,#B71 0,#B71 26%,rgba(240,166,17,0) 0,rgba(240,166,17,0) 74%,#B71 0,#B71 76%,#fb1 0)0 0,linear-gradient(90deg,#B71 2%,#fb1 0,#fb1 98%,#B71 0%)0 0 #fb1;
+    background-size: 40px 60px;
+}
+.inputbar input{
+    width:70%;
+    font-size: 2vh;
+}
+.inputbar input:focus{
+    color:white;
+    background-color: black;
+}
+.inputbar button{
+    color: black;
+    background-color:RGB(251, 130, 215);
+    width:30%;
+    font-size: 2vh;
+}
+
+.inputbar button:active{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+
+p{
+    top:34%;
+    left:50%;
+    font-size: 2vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
