@@ -71,7 +71,7 @@ top_row:Height*boundaries.top_row
   }
   detectUrl=()=> {
     this.setState({ imageUrl: this.state.link});
-      fetch('http://localhost:3001/imageUrl', {
+      fetch('https://obscure-hamlet-68007.herokuapp.com/imageUrl', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -81,7 +81,7 @@ top_row:Height*boundaries.top_row
        .then(response => response.json())
       .then((response) => {
          if (response) {
-          fetch('http://localhost:3001/image', {
+          fetch('https://obscure-hamlet-68007.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
