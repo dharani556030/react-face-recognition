@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { Link,Redirect } from "react-router-dom";
+import { Link,withRouter } from "react-router-dom";
 
 class Signin extends React.Component{
    
@@ -9,7 +9,7 @@ class Signin extends React.Component{
         this.state={
             email: '',
             password: '',
-            valid:false
+            //valid:false
         }
     }
 
@@ -34,7 +34,9 @@ class Signin extends React.Component{
          .then(user => {
              if (user.email) { console.log(user);
                  this.props.loadUser(user);
-                 this.setState({valid:true});
+                 //this.setState({valid:true});
+                 console.log(this.props);
+                 this.props.history.push('/home');
              }
             
         })
@@ -44,10 +46,10 @@ class Signin extends React.Component{
     render() {
 
     
-        if (this.state.valid) {
+       /* if (this.state.valid) {
             return (<Redirect to="/home" />);
         }
-        else {
+        else {*/
             return (
                 <article className=" signinform br3 shadow-5 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw6 center">
                     <main className="pa4 black-80">
@@ -89,6 +91,6 @@ class Signin extends React.Component{
         }
     }
 
-}
 
-export default Signin;
+
+export default withRouter(Signin);
